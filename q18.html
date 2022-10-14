@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping Site for Mobile, Electronics, Furniture, Grocery,
+      Lifestyle, Books &amp; More. Best Offers!
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f1f3f6;
+      }
+      header {
+        background-color: #2874f0;
+        height: 56px;
+      }
+      nav {
+        display: flex;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo img {
+        width: 88px;
+        padding: 0 25px;
+      }
+      nav ul {
+        height: 58px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      h2 {
+        font-family: "Ubuntu", sans-serif;
+        margin: 20px 10px;
+        padding: 10px 0 20px 10px;
+        border-bottom: 0.2px solid grey;
+      }
+      nav ul li {
+        list-style: none;
+        padding: 0 23px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-family: "Ubuntu", sans-serif;
+      }
+      nav ul li a:hover {
+        font-weight: bolder;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+      }
+      .search input {
+        width: 30vw;
+        height: 27px;
+        border-radius: 5px;
+        margin: 0 16px 0 56px;
+        padding: 0 12px;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .search button {
+        font-weight: 900;
+        padding: 5px;
+        cursor: pointer;
+        color: white;
+        background-color: #2874f0;
+        border-radius: 5px;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .search button:hover{
+          background-color: white;
+          color: black;
+      }
+      .slider {
+        width: 80vw;
+        margin: 12px auto ;
+        overflow: hidden;
+      }
+      .card {
+        max-width: 91vw;
+        margin: 37px auto;
+        background-color: white;
+        border-radius: 5px;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .cards {
+        display: flex;
+        overflow: hidden;
+      }
+      .card-item {
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 15px;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .container {
+        min-height: calc(100vh-58px-9vh);
+      }
+      .flex-all-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+        background-color: #2874f0;
+        height: 9vh;
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="./logo.png" alt="flipkart logo" /></a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" name="search" id="search" placeholder="Search for Products, Brands & More" />
+          <button class="btn">Search</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="slider">
+          <img src="./Amitji.jpg" alt="" height="300px" />
+        </div>
+        <div class="card">
+          <h2 class="my-2">Top Offers</h2>
+          <div class="cards">
+            <div class="card-item">
+              <img src="./jeans.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Spykar, Killer, Wildcraft, Puma</p>
+                <p class="text-center my-1" style="color: green;">50-80% Off</p>
+                <p class="text-center my-1">Jeans, jackets & More</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./jewellery.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Shop for fav Jewellery</p>
+                <p class="text-center my-1" style="color: green;">From 99</p>
+                <p class="text-center my-1">One Stop Destination!</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./gas stoves.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Gas Stoves</p>
+                <p class="text-center my-1" style="color: green;">40-80% Off</p>
+                <p class="text-center my-1">Rush to Grab the Best Offer!</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./shoes.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Nike, Adidas...</p>
+                <p class="text-center my-1" style="color: green;">Min. 50% Off</p>
+                <p class="text-center my-1">Women's Footwear</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./shoes1.jpg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Woodland, Wrogn, USPA...</p>
+                <p class="text-center my-1" style="color: green;">Min. 40% Off</p>
+                <p class="text-center my-1">Men's Casual Shoes, Sandals...</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./power bank.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Sony, Ambrane...</p>
+                <p class="text-center my-1" style="color: green;">Min. 40% Off</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="my-2">Today's Fashion Deals</h2>
+          <div class="cards">
+            <div class="card-item">
+              <img src="./dry fruits.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Dry Fruits</p>
+                <p class="text-center my-1" style="color: green;">Upto 85% Off</p>
+                <p class="text-center my-1">Granola, Hapilo & More</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./flute.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Flute</p>
+                <p class="text-center my-1" style="color: green;">Upto 70% Off</p>
+                <p class="text-center my-1">Explore Now!</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./baby walkers.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Baby Walker</p>
+                <p class="text-center my-1" style="color: green;">20-60% Off</p>
+                <p class="text-center my-1">Musical Walker & More</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./bakeware.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Bakeware Range</p>
+                <p class="text-center my-1" style="color: green;">From 49</p>
+                <p class="text-center my-1">2 Mech & More</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./furniture.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Furniture</p>
+                <p class="text-center my-1" style="color: green;">Min. 50% Off</p>
+                <p class="text-center my-1">Rush to Grab Now!</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./wall clocks.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Wall Clocks</p>
+                <p class="text-center my-1" style="color: green;">From 499*</p>
+                <p class="text-center my-1">Rush to Grab Now!</p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./headphones.jpeg" alt="" />
+              <div class="lines">
+                <p class="text-center my-1">Apple, Sony, JBL...</p>
+                <p class="text-center my-1" style="color: green;">Min. 40% Off</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="my-2">Featured Brands</h2>
+        <div class="cards">
+          <div class="card-item">
+            <img src="./toy sport.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Toy Sport</p>
+              <p class="text-center my-1" style="color: green;">From 79</p>
+              <p class="text-center my-1">Basket Ball, Sakets & More</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./remotes.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">TV Streaming Devices</p>
+              <p class="text-center my-1" style="color: green;">Upto 50% Off</p>
+              <p class="text-center my-1">Google, Airtel & More</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./printer.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Best Deals on Printers</p>
+              <p class="text-center my-1" style="color: green;">From 2149*</p>
+              <p class="text-center my-1">HP, Canon & More</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./home temples.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Home Temples</p>
+              <p class="text-center my-1" style="color: green;">50-80% Off</p>
+              <p class="text-center my-1">English Wooden</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./solar panels.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Solar Panels</p>
+              <p class="text-center my-1" style="color: green;">30% Off</p>
+              <p class="text-center my-1">Philips, Panasonic & More</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./egg.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Egg Cooker</p>
+              <p class="text-center my-1" style="color: green;">Upto 70% Off</p>
+              <p class="text-center my-1">Best Selling</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./multi vitamins.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Muscle Blaze</p>
+              <p class="text-center my-1" style="color: green;">Min. 40% Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="my-2">Best of Electronics</h2>
+        <div class="cards">
+          <div class="card-item">
+            <img src="./camera.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Top 20 Cameras</p>
+              <p class="text-center my-1" style="color: green;">From 3699*</p>
+              <p class="text-center my-1">DSLRs, Action, Digital & More</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./diaries.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Notebooks & Diaries</p>
+              <p class="text-center my-1" style="color: green;">From 29*</p>
+              <p class="text-center my-1">Classmate, Neelgagan</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./bean bags.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Bean Bags</p>
+              <p class="text-center my-1" style="color: green;">From 999*</p>
+              <p class="text-center my-1">Wildcraft, Decathlon</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./mi smart tvs.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Android TVs</p>
+              <p class="text-center my-1" style="color: green;">From 14999*</p>
+              <p class="text-center my-1">One Plus, MI, Samsung</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./mugs.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Mugs</p>
+              <p class="text-center my-1" style="color: green;">From 599*</p>
+              <p class="text-center my-1">Nyasa, Rishabh</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="./bean bags.jpeg" alt="" />
+            <div class="lines">
+              <p class="text-center my-1">Bean Bags</p>
+              <p class="text-center my-1" style="color: green;">Min. 40% Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex-all-center">
+      <p>Copyright &copy; 2007-2021 - Flipkart All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
